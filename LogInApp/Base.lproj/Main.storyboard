@@ -19,13 +19,15 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="kGQ-3U-CV8">
                                 <rect key="frame" x="25" y="317" width="380" height="132.33333333333337"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8ga-bi-9Gj">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="User Name" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8ga-bi-9Gj">
                                         <rect key="frame" x="0.0" y="0.0" width="380" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.25" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pcZ-ed-sH2">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pcZ-ed-sH2">
                                         <rect key="frame" x="0.0" y="49" width="380" height="34"/>
+                                        <color key="textColor" white="0.25" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -39,31 +41,29 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5F-Tr-Wck">
-                                <rect key="frame" x="25" y="459.33333333333331" width="380" height="34.333333333333314"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoc-Gp-wlq">
-                                        <rect key="frame" x="0.0" y="0.0" width="190" height="34.333333333333336"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Forgot User name?"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCx-5N-YZX">
-                                        <rect key="frame" x="190" y="0.0" width="190" height="34.333333333333336"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Forgot Password?"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCx-5N-YZX">
+                                <rect key="frame" x="223" y="459.33333333333331" width="182" height="34.333333333333314"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Forgot Password?" titleAlignment="trailing"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" misplaced="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoc-Gp-wlq">
+                                <rect key="frame" x="25" y="455" width="156" height="34"/>
+                                <inset key="contentEdgeInsets" minX="-23" minY="-81" maxX="-37" maxY="-31"/>
+                                <inset key="titleEdgeInsets" minX="-13" minY="0.0" maxX="0.0" maxY="-46"/>
+                                <inset key="imageEdgeInsets" minX="-39" minY="0.0" maxX="0.0" maxY="-52"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Forgot User name?" titleAlignment="leading"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
                             <constraint firstItem="kGQ-3U-CV8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="9Is-Mc-F0j"/>
-                            <constraint firstItem="C5F-Tr-Wck" firstAttribute="top" secondItem="kGQ-3U-CV8" secondAttribute="bottom" constant="10" id="GAh-Lu-6Mc"/>
-                            <constraint firstItem="C5F-Tr-Wck" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="N7e-dy-u1d"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kGQ-3U-CV8" secondAttribute="trailing" constant="25" id="Rrp-p7-6Qg"/>
                             <constraint firstItem="kGQ-3U-CV8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" multiplier="3" constant="140" id="dub-95-nqP"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="C5F-Tr-Wck" secondAttribute="trailing" constant="25" id="fzK-8h-EnD"/>
+                            <constraint firstItem="yoc-Gp-wlq" firstAttribute="top" secondItem="kGQ-3U-CV8" secondAttribute="bottom" constant="10" id="iaB-GF-9fD"/>
+                            <constraint firstItem="yoc-Gp-wlq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="vbR-IC-sIl"/>
                         </constraints>
                     </view>
                     <connections>
@@ -72,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="102" y="4"/>
+            <point key="canvasLocation" x="101.86046511627907" y="3.8626609442060089"/>
         </scene>
         <!--Start View Controller-->
         <scene sceneID="sjw-xx-2kT">
@@ -84,6 +84,9 @@
                         <viewLayoutGuide key="safeArea" id="cPR-cz-JTN"/>
                         <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="StartVC" destination="rmm-wz-Zch" id="iF8-7F-v3J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9bP-Un-Avq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
