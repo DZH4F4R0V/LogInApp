@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="101.86046511627907" y="3.8626609442060089"/>
         </scene>
-        <!--Start View Controller-->
+        <!--First View Controller-->
         <scene sceneID="sjw-xx-2kT">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="nf0-f0-M32" customClass="StartViewController" customModule="LogInApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="nf0-f0-M32" customClass="FirstViewController" customModule="LogInApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rmm-wz-Zch">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
