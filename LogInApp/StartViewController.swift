@@ -82,6 +82,6 @@ final class StartViewController: UIViewController {
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-        
+        passwordTF.text = ""
         }
 }
