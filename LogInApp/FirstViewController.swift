@@ -9,8 +9,10 @@ import UIKit
 
 final class FirstViewController: UIViewController {
 
+    // MARK: IBOutlets
     @IBOutlet var greetingLabel: UILabel!
     
+    // MARK: Properties
     var userName = ""
     
     override func viewDidLoad() {
