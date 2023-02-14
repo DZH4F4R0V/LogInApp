@@ -40,8 +40,8 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="logInButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vxj-18-QkY"/>
-                                            <segue destination="nf0-f0-M32" kind="presentation" id="eeg-rb-ygd"/>
+                                            <action selector="logInButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="uBK-47-oll"/>
+                                            <segue destination="nf0-f0-M32" kind="presentation" id="IPY-wT-dzZ"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XSg-4x-6co">

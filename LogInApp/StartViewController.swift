@@ -23,8 +23,6 @@ final class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         logInButton.layer.cornerRadius = 10
-        userNameTF.becomeFirstResponder()
-        passwordTF.becomeFirstResponder()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -34,9 +32,18 @@ final class StartViewController: UIViewController {
         settingVC.userName = userName
     }
 
-//    override func touchesBegan(_ touches: Set, with event: UIEvent?) {
-//        super .touchesBegan(touches, with: event)
-//    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super .touchesBegan(touches, with: event)
+        if let touch = touches.first {
+            if touch.view != self.userNameTF {
+                self.userNameTF.resignFirstResponder()
+            }
+            
+            if touch.view != self.passwordTF {
+                self.passwordTF.resignFirstResponder()
+            }
+        }
+    }
     
     // MARK: IBActions
     @IBAction func logInButtonTapped() {
@@ -47,6 +54,8 @@ final class StartViewController: UIViewController {
                 preferredStyle: .alert
             )
             let alertAction = UIAlertAction(title: "OK", style: .cancel)
+            alertController.addAction(alertAction)
+            present(alertController, animated: true, completion: nil)
         }
     }
     
