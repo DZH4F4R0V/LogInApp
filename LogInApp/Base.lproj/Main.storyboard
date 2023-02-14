@@ -119,6 +119,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Log out">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="L2f-jC-o5z" kind="unwind" unwindAction="unwindFor:" id="ZrW-J7-r8F"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cPR-cz-JTN"/>
@@ -135,11 +138,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="StartVC" destination="rmm-wz-Zch" id="iF8-7F-v3J"/>
                         <outlet property="greetingLabel" destination="Imb-DA-S6y" id="06W-69-IEV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9bP-Un-Avq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="L2f-jC-o5z" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1052.0930232558139" y="3.8626609442060089"/>
         </scene>

@@ -15,7 +15,7 @@ final class StartViewController: UIViewController {
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-    // MARK: Constants
+    // MARK: Properties
     let userName = "1"
     let password = "1"
     
@@ -23,6 +23,8 @@ final class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         logInButton.layer.cornerRadius = 10
+        userNameTF.becomeFirstResponder()
+        passwordTF.becomeFirstResponder()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -31,10 +33,10 @@ final class StartViewController: UIViewController {
         }
         settingVC.userName = userName
     }
-    
-    //    override func unwind(for segue: UIStoryboardSegue) {
-    //
-    //    }
+
+//    override func touchesBegan(_ touches: Set, with event: UIEvent?) {
+//        super .touchesBegan(touches, with: event)
+//    }
     
     // MARK: IBActions
     @IBAction func logInButtonTapped() {
@@ -69,4 +71,8 @@ final class StartViewController: UIViewController {
         alertController.addAction(alertAction)
         present(alertController, animated: true, completion: nil)
     }
+    
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        
+        }
 }
