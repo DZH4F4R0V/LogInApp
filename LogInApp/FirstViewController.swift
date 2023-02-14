@@ -18,6 +18,14 @@ final class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         greetingLabel.text = "Привет \(userName)!!!"
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = view.bounds
+        gradientLayer.colors = [
+            UIColor.systemGreen.cgColor,
+            UIColor.systemYellow.cgColor
+        ]
+        view.layer.insertSublayer(gradientLayer, at: 0)
     }
 }
 
