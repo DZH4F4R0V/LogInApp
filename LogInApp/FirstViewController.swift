@@ -9,8 +9,13 @@ import UIKit
 
 final class FirstViewController: UIViewController {
 
+    @IBOutlet var greetingLabel: UILabel!
+    
+    var userName = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        greetingLabel.text = "Привет \(userName)!!!"
     }
 }
 
