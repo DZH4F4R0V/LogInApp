@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="kGQ-3U-CV8">
-                                <rect key="frame" x="25" y="140" width="270" height="193.5"/>
+                                <rect key="frame" x="25" y="140" width="270" height="172"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8ga-bi-9Gj">
                                         <rect key="frame" x="0.0" y="0.0" width="270" height="34"/>
@@ -45,23 +45,27 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XSg-4x-6co">
-                                        <rect key="frame" x="0.0" y="147.5" width="270" height="46"/>
+                                        <rect key="frame" x="0.0" y="147.5" width="270" height="24.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" contentHorizontalAlignment="leading" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoc-Gp-wlq">
-                                                <rect key="frame" x="0.0" y="0.0" width="135" height="46"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="135" height="24.5"/>
                                                 <inset key="contentEdgeInsets" minX="-23" minY="-81" maxX="-37" maxY="-31"/>
                                                 <inset key="titleEdgeInsets" minX="-13" minY="0.0" maxX="0.0" maxY="-46"/>
                                                 <inset key="imageEdgeInsets" minX="-39" minY="0.0" maxX="0.0" maxY="-52"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Forgot User name?" buttonSize="small" titleAlignment="leading"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Forgot User name?" buttonSize="small" titleAlignment="leading">
+                                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleCaption1"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="userNameButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="LtS-bX-Zqw"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCx-5N-YZX">
-                                                <rect key="frame" x="143" y="0.0" width="127" height="46"/>
+                                                <rect key="frame" x="143" y="0.0" width="127" height="24.5"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Forgot Password?" buttonSize="small" titleAlignment="trailing"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Forgot Password?" buttonSize="small" titleAlignment="trailing">
+                                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleCaption1"/>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="passwordButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="dEa-cc-uu7"/>
                                                 </connections>
