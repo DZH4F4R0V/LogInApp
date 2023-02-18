@@ -19,9 +19,19 @@ final class BestSellersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bestsellerImageView.image = UIImage(named: user.person.books.cover)
-        titleLabel.text = user.person.books.title
-        yearLabel.text = user.person.books.year.formatted()
-        aboutLabel.text = user.person.books.about
+        titleLabel.text = "Книга: \(user.person.books.title)"
+        yearLabel.text = "Год издания: \(user.person.books.year)"
+        aboutLabel.text = "О книге: \(user.person.books.about)"
+        aboutLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
+        aboutLabel.numberOfLines = 50
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = view.bounds
+        gradientLayer.colors = [
+            UIColor.systemIndigo.cgColor,
+            UIColor.systemCyan.cgColor
+        ]
+        view.layer.insertSublayer(gradientLayer, at: 0)
     }
 
 }

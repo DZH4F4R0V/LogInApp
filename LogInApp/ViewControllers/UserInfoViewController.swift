@@ -25,7 +25,7 @@ final class UserInfoViewController: UIViewController {
         ageLabel.text = "Возраст: \(user.person.age)"
         companyLabel.text = "Компания: \(user.person.company)"
         photoImageView.image = UIImage(named: user.person.photo)
-        photoImageView.layer.cornerRadius = photoImageView.frame.width / 2
+        photoImageView.layer.cornerRadius = photoImageView.frame.height / 1.5
         
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view.bounds
@@ -35,11 +35,4 @@ final class UserInfoViewController: UIViewController {
         ]
         view.layer.insertSublayer(gradientLayer, at: 0)
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let bioVC = segue.destination as? BioViewController else {
-//            return
-//        }
-//        bioVC.bioLabel.text = user.person.biography
-//    }
 }

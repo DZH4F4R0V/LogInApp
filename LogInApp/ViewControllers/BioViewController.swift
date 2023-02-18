@@ -12,12 +12,14 @@ import UIKit
 final class BioViewController: UIViewController {
 
     @IBOutlet var bioLabel: UILabel!
-    
-    @IBOutlet var bioScrollView: UIScrollView!
+    @IBOutlet var bioTopLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bioTopLabel.text = "Биография \(user.person.name)а \(user.person.surName)а"
         bioLabel.text = user.person.biography
+        bioLabel.lineBreakMode = NSLineBreakMode.byWordWrapping
+        bioLabel.numberOfLines = 50
     }
 
 }

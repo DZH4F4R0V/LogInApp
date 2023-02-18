@@ -1,7 +1,6 @@
 {
   "images" : [
     {
-      "filename" : "Ajzek_Azimov__Ya_robot_sbornik.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -11,6 +10,19 @@
     },
     {
       "idiom" : "universal",
+      "scale" : "3x"
+    },
+    {
+      "idiom" : "iphone",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Ajzek_Azimov__Ya_robot_sbornik.jpeg",
+      "idiom" : "iphone",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "iphone",
       "scale" : "3x"
     }
   ],
