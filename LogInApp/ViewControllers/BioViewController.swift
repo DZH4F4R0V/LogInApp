@@ -7,11 +7,17 @@
 
 import UIKit
 
-class BioViewController: UIViewController {
 
+
+final class BioViewController: UIViewController {
+
+    @IBOutlet var bioLabel: UILabel!
+    
+    @IBOutlet var bioScrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        bioLabel.text = user.person.biography
     }
 
 }

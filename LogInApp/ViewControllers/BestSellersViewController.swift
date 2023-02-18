@@ -7,12 +7,21 @@
 
 import UIKit
 
-class BestSellersViewController: UIViewController {
-
+final class BestSellersViewController: UIViewController {
+    
+    
+    @IBOutlet var bestsellerImageView: UIImageView!
+    
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var yearLabel: UILabel!
+    @IBOutlet var aboutLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        bestsellerImageView.image = UIImage(named: user.person.books.cover)
+        titleLabel.text = user.person.books.title
+        yearLabel.text = user.person.books.year.formatted()
+        aboutLabel.text = user.person.books.about
     }
 
 }
