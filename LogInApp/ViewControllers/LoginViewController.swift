@@ -13,8 +13,8 @@ final class LoginViewController: UIViewController {
     @IBOutlet var passwordTF: UITextField!
     
     // MARK: Properties
-    private let userName = "1"
-    private let password = "1"
+    private let userName = user.userName
+    private let password = user.password
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else {
@@ -43,8 +43,8 @@ final class LoginViewController: UIViewController {
     
     @IBAction func forgotRegisterData(_ sender: UIButton) {
         sender.tag == 0
-        ? showAlert(title: "Check it!", message: "Your name is 1")
-        : showAlert(title: "Check it!", message: "Your password is 1")
+        ? showAlert(title: "Check it!", message: "Your name is User")
+        : showAlert(title: "Check it!", message: "Your password is password")
     }
     
     @IBAction func unwind(segue: UIStoryboardSegue) {

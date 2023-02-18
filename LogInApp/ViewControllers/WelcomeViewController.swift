@@ -17,7 +17,7 @@ final class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        greetingLabel.text = "Привет \(userName)!!!"
+        greetingLabel.text = "Привет \(user.person.name) \(user.person.surName)!!!"
         
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view.bounds
